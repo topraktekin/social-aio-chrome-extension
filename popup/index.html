@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!--<script src="js/177b8cbc45.js" crossorigin="anonymous"></script>-->
+	<script src="js/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+<link href="fonts/icomoon.css" rel="stylesheet">
+</head>
+<body>
+<div id="select-media" class="container mt-5">
+<div class="d-flex justify-content-center align-items-center" >
+  <p style="color:#fff; font-size:15px;">Social AIO v1.5.5</p>
+</div>
+	  <hr style="background-color: #fff;">
+  <div class="row justify-content-center" style="margin-bottom: 15px;">
+    <!-- Twitter -->
+    <div class="col mx-3">
+      <div class="row justify-content-center" style="margin-bottom: 15px;">
+        <div class="col-auto">
+          <a id="twitter-btn" class="text-decoration-none">
+            <i class="fab fa-twitter fa-3x" style="color: #1DA1F2;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Facebook -->
+    <div class="col mx-3">
+      <div class="row justify-content-center" style="margin-bottom: 15px;">
+        <div class="col-auto">
+          <a id="facebook-btn" class="text-decoration-none">
+            <i class="fab fa-facebook fa-3x" style="color: #9c9c9c;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="row justify-content-center" style="margin-bottom: 15px;">
+    <!-- Instagram -->
+    <div class="col mx-3">
+      <div class="row justify-content-center" style="margin-bottom: 15px;">
+        <div class="col-auto">
+          <a id="instagram-btn" class="text-decoration-none">
+            <i class="fab fa-instagram fa-3x" style="color: #9c9c9c;"></i>
+          </a>
+		  
+        </div>
+      </div>
+    </div>
+	
+    <!-- LinkedIn -->
+    <div class="col mx-3">
+      <div class="row justify-content-center" style="margin-bottom: 15px;">
+        <div class="col-auto">
+          <a id="linkedin-btn" class="text-decoration-none">
+            <i class="fab fa-linkedin fa-3x" style="color: #9c9c9c;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+	</div>
+  <hr style="background-color: #fff;">
+<div class="row">
+  <div class="col-4 mb-3">
+    <a href="config.html" class="btn w-100 btn-sm btn-outline-primary" target="_blank" title="Additional options.">
+      <strong>
+        <span class="icon-cog3" aria-hidden="true"></span> Options </strong>
+    </a>
+  </div>
+  <div class="col-4 mb-3">
+    <a href="https://kynikos.click" class="btn w-100 btn-sm btn-outline-success" target="_blank" title="How to use Social Media Bot.">
+      <strong>
+        <span class="icon-file-play" aria-hidden="true"></span> Tutorials </strong>
+    </a>
+  </div>
+  <div class="col-4 mb-3">
+    <a href="https://kynikos.click/support.html" title="Contact with us, report bugs, ask for features." class="btn w-100 btn-sm btn-outline-info" target="_blank">
+      <strong>
+        <span class="icon-envelop2" aria-hidden="true"></span> Contact </strong>
+    </a>
+  </div>
+</div>
+</div>
+
+<div id="twitter" style="display:none;">
+<div class="d-flex justify-content-center align-items-center" >
+  <p style="color:#fff; font-size:15px;">Social AIO v1.5.2</p>
+</div>
+<!--
+	  <hr style="background-color: #fff;">
+	    <div class="alert alert-primary text-center" role="alert"><p style="color:#000; font-size:15px;">You can purchase a license to remove limits and use new features</p> <a href="config.html" target="_blank" title="Open homepage."><strong>Social AIO Bot</strong></a>.</div>
+-->
+		<div class="input-group">
+		<br/><br/>
+			<label class="container" style="color:#fff">Like
+			  <input id="like" type="checkbox" checked="checked">
+			  <span class="checkmark"></span>
+			</label><br>
+			<label class="container" style="color:#fff">Retweet
+			  <input id="retweet" type="checkbox">
+			  <span class="checkmark"></span>
+			</label><br>
+			<label class="container" style="color:#fff">Follow
+			  <input id="follow" type="checkbox">
+			  <span class="checkmark"></span>
+			</label><br>
+		<label class="container" style="color:#fff">Reply
+			  <input id="reply" type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+		<div id="reply_text" >
+		  <span class="w-3/10" style="padding-top: 5px;color:#fff"> Set Reply text </span>
+
+	<div>
+	  <input type="radio" id="singleSentence" name="sentenceType" value="single" checked>
+	  <label for="singleSentence">Single Sentence</label><br>
+	  <input type="radio" id="multipleSentences" name="sentenceType" value="multiple">
+	  <label for="multipleSentences">Multiple Sentences</label><br>
+	  
+	  <div id="singleSentenceInput">
+		  <label for="sentenceInput">Enter Single Sentence:</label><br>
+		  <input type="text" id="sentenceInput" name="reply" size="50">
+	  </div>
+	  
+	  <div id="multipleSentencesInput" style="display: none;">
+		  <label for="multiSentenceSelect">Select Multiple Sentences:</label><br>
+		  <select id="multiSentenceSelect" size="4"></select><br><br>
+		  <input type="file" id="fileInput">
+	  </div>
+	</div>
+		</div>
+		  <span id="error_checkbox" >
+			<span >You need to choose one.</span>
+		  </span>
+		  <button id="button-start" class="btn w-100 btn-sm btn-outline-success" >Start Bot</button>
+		
+		<button id="button-logs" style="margin-top: 15px;" class="btn w-100 btn-sm btn-outline-warning">Logs</button>
+		</div>
+<hr style="background-color: #fff;">
+<div class="row">
+  <div class="col-4 mb-3">
+    <a href="config.html" class="btn w-100 btn-sm btn-outline-primary" target="_blank" title="Additional options.">
+      <strong>
+        <span class="icon-cog3" aria-hidden="true"></span> Options </strong>
+    </a>
+  </div>
+  <div class="col-4 mb-3">
+    <a href="https://kynikos.click" class="btn w-100 btn-sm btn-outline-success" target="_blank" title="How to use Social Media Bot.">
+      <strong>
+        <span class="icon-file-play" aria-hidden="true"></span> Tutorials </strong>
+    </a>
+  </div>
+  <div class="col-4 mb-3">
+    <a href="https://kynikos.click/support.html" title="Contact with us, report bugs, ask for features." class="btn w-100 btn-sm btn-outline-info" target="_blank">
+      <strong>
+        <span class="icon-envelop2" aria-hidden="true"></span> Contact </strong>
+    </a>
+  </div>
+</div>
+
+</div>
+<div id="results" class="hidden">
+	<div id="progressbar">
+	  <div id="progress">
+
+	  </div>
+	</div>
+
+	<div class="text-center">
+	  <p>
+		<span id="span-action" style="text-transform:capitalize;"></span>
+		<span id="span-count"></span>
+		<span> out of </span>
+		<span id="span-target"></span>
+	  </p>
+
+	  <button class="yellow-button"  id="button-stop">Stop</button>
+	</div>
+</div>
+  
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+body {
+  width: 330px;
+  height: 100px;
+  background-color: #0b2535;
+}
+
+body > div {
+  padding: 5%;
+  width: 90%;
+}
+
+.input-group {
+  padding-bottom: 10px;
+}
+
+
+#progressbar {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+#progress {
+  height: 20px;		
+  border-radius: 5px;
+  background-color: #ffc107;
+}
+
+.yellow-button {
+  background-color: #EF5350;
+  border-style:  none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  width:45%;
+  cursor: pointer;
+}
+
+.button-start{
+  background-color: #4caf50;
+  border-style:  none;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer;
+  width:84%;
+  font-size: medium;
+}
+.button-logs{
+  background-color: #aaa;
+  border-style:  none;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer;
+  width:84%;
+  font-size: medium;
+}
+.button-resume{
+  vertical-align: middle;
+}
+#error{
+  margin-top: 10px;
+  display: none;
+  color: red;
+}
+#reply_text{
+  margin-top: 10px;
+  display: none;
+  color: red;
+}
+#error_checkbox{
+  margin-top: 10px;
+  display: none;
+  color: red;
+}
+#help{
+  color:#ffffff;
+  
+  font-size:30px;
+  margin:auto 0;
+  margin-left:5px;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-1\/2 {
+  width: 50% !important;
+}
+
+.w-4\/5 {
+  width: 80% !important;
+}
+
+.w-9\/10 {
+  width: 90% !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-1\/4 {
+  width: 15%;
+}
+
+.w-3\/4 {
+  width: 75%;
+  
+}
+
+
+.ml-3 {
+  margin-left: .75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center !important;
+  color: #fff;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.w-3\/10 {
+  width: 30% !important;
+}
+
+.w-7\/10 {
+  width: 70% !important;
+}
+
+.p-none {
+  padding: 0 !important;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #0e2b43;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.container .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  font-size:12px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.container:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; 
+  
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#upgrade-btn-monthly, #upgrade-btn-yearly {
+  background-color: #2dcc70;
+  width: 100%;
+  border-radius: 4px;
+  border-style: none;
+  height: 40px;
+  font-weight: 700;
+  color: #fff;
+}

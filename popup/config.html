@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social AIO Config</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <style>
+  .error_payment {
+    display: none;
+	font-size: 20px;
+	color:red;
+}
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2>Social AIO Config</h2>
+	<div class="row">
+	
+<div class="col-sm-12 col-md-6">
+  <div class="card shadow mb-4">
+    <div class="card-body pb-0 m-2" id="activate_key_div" >
+
+
+<div class="mt-4 small" id="un">
+  <div class="row">
+    <div class="col-12">
+      <p>This app is <strong>completely free</strong> and license checks have been removed. If you enjoy using it and would like to support me, feel free to buy me a coffee using cryptocurrency.</p>
+    </div>
+    <div class="col-12 my-1">
+      <p>You can send your support to the following cryptocurrency address:</p>
+    </div>
+    <div class="col-12">
+      <p><strong>Bitcoin (BTC) Address:</strong> bc1qruraw202p7gzgvq73wd9xx6vk8tg2grkuaddwm</p>
+    </div>
+    <div class="col-12">
+      <p><strong>Ethereum (ETH) Address:</strong> 0x6c52c286236e430D88A44086B951fa8B40189Ef7</p>
+    </div>
+	    <div class="col-12">
+      <p><strong>TRON (TRX) Address:</strong> TBtzP4exTDqvcaaANcCg8U7kmpJGNfTLSd</p>
+    </div>
+  </div>
+</div>
+
+      <div class="small" id="err" hidden="" >
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-danger my-4" role="alert">
+              <p>There was an <strong>error</strong> while trying to connect to the activation server! </p>
+              <p>You can check here if our server is working fine:</p>
+              <p>
+                <a href="https://downforeveryoneorjustme.com/kynikos.click" class="alert-link" rel="nofollow">https://downforeveryoneorjustme.com/kynikos.click</a>
+              </p>
+              <p>Possible reasons why it doesn't work for you:</p>
+              <ul>
+                <li>Network error - check your Internet and ISP connection</li>
+                <li>Check your firewall if you are blocking access to the <strong>kynikos.click</strong> domain </li>
+                <li>Disable your VPN connection and try without it</li>
+                <li>We might be updating our web site, wait for a while and try again!</li>
+              </ul>
+              <p>If it doesn't work no matter what please <a href="https://kynikos.click/support.html" class="alert-link">contact with us</a>. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	      <div class="mt-4 re" id="account_detail" style="display:none;">
+        <div class="row small">
+          <div class="col-6">
+            <p class="mt-1">
+              <span class="icon-checkmark3 me-2 text-success" aria-hidden="true"></span>
+              <strong>Unlimited</strong> Actions in session
+            </p>
+            <p class="mt-4">
+              <span class="icon-heart3 me-2 text-success" aria-hidden="true"></span>Our <strong>gratitude</strong> &amp; <strong>desire</strong> to improve
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="mt-1">
+              <span class="icon-user me-2 text-success" aria-hidden="true"></span>Registered to <strong id="cu">System</strong>
+            </p>
+            <p class="mt-4">
+              <span class="icon-users me-2 text-success" aria-hidden="true"></span>License type <strong id="type_lic">Personal</strong>
+            </p>
+            <p class="mt-4">
+              <span class="icon-calendar2 me-2 text-success" aria-hidden="true"></span>License expiration <strong id="exp_date">dd-mm-yyyy</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="card-footer small text-muted re" id="thanks_div" style="display:none;" >
+      <p class="m-2">Thank you for your support! Thanks to your payment, we are able to support and upgrade this software. Feel free to <a href="https://kynikos.click/support.html">contact us</a> with any problem. </p>
+      <p class="m-2">
+        <span class="icon-star-full my-2 text-warning" aria-hidden="true"></span>
+        <span class="icon-star-full my-2 text-warning" aria-hidden="true"></span>
+        <span class="icon-star-full my-2 text-warning" aria-hidden="true"></span>
+        <span class="icon-star-full my-2 text-warning" aria-hidden="true"></span>
+        <span class="icon-star-full my-2 text-warning" aria-hidden="true"></span> Leave us a review ( <a href="https://chromewebstore.google.com/detail/twitter-auto-retweet-like/pjbcokeiajlkicejjfioeoggjblmhoko" title="Leave a review on Chrome Web Store and earn extra free 6 months updates.">Chrome</a>, <a href="https://chromewebstore.google.com/detail/twitter-auto-retweet-like/pjbcokeiajlkicejjfioeoggjblmhoko" title="Leave a review on Edge Web Store and earn extra free 6 months updates.">Edge</a> ) and get +6 months of free updates!
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-6">
+  <div class="row">
+<div class="col-12">
+  <div class="card shadow mb-4">
+    <div class="card-header">
+      <div class="text-muted small fw-bold m-1">
+        <span class="icon-cog2 me-1" aria-hidden="true"></span> Generic settings
+      </div>
+    </div>
+    <div class="card-body pb-0 m-2">
+      <form>
+        <div class="form-group row mt-0">
+          <label for="max_clicks" class="col-8 col-form-label" title="Maximum number of actions including
+follows, unfollows, likes or unlikes.
+
+Warning!
+Don't be greedy, it should mimic human
+behaviour, higher number of clicks might
+trigger anti-spamming filters!">Max. clicks per session</label>
+          <div class="col-4">
+            <div class="input-group">
+              <input type="number" class="form-control" autocomplete="off" min="0" value="1" title="Maximum number of actions including
+follows, unfollows, likes or unlikes.
+
+Warning!
+Don't be greedy, it should mimic human
+behaviour, higher number of clicks might
+trigger anti-spamming filters!" id="max_clicks">
+              <button class="btn btn-outline-secondary" type="button" title="Reset default value." id="max_clicks_reset">
+                <span class="icon-reset" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr class="my-4">
+      <form>
+        <div class="form-group row">
+          <label for="min_delay" class="col-5 col-form-label">Min. delay between Actions</label>
+          <div class="col-3 pe-0">
+            <div class="input-group">
+              <input type="number" class="form-control" autocomplete="off" min="0" title="Minimum delay time between each click." id="min_delay">
+              <button class="btn btn-outline-secondary" type="button" title="Reset default value." id="min_delay_reset">
+                <span class="icon-reset" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <select disabled class="form-select d-inline-block w-100" title="Select time unit." id="min_time_unit">
+              <option value="1">Seconds</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <form>
+        <div class="form-group row mt-3">
+          <label for="max_delay" class="col-5 col-form-label">Max. delay between Actions</label>
+          <div class="col-3 pe-0">
+            <div class="input-group">
+              <input type="number" class="form-control" autocomplete="off" min="0" title="Maximum delay time between each click." id="max_delay">
+              <button class="btn btn-outline-secondary" type="button" title="Reset default value." id="max_delay_reset">
+                <span class="icon-reset" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <select disabled class="form-select d-inline-block w-100" title="Select time unit." id="max_time_unit">
+              <option value="1">Seconds</option>
+            </select>
+          </div>
+        </div>
+      </form>
+	  <div id="generic_warn">
+	   <p>Generic settings only valid on licensed versions</p>
+	  </div>
+    
+
+
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12 d-none" aria-hidden="true" id="save-options-success">
+    <div class="alert alert-primary" role="alert">Options successfully saved.</div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <button class="btn btn-primary btn-lg p-3 w-100 mb-4" id="save_config" title="Save all changes.">
+      <span class="icon-floppy-disk2 me-1" aria-hidden="true"></span> Save options </button>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <button class="btn btn-secondary btn-lg p-3 w-100 mb-4" type="button" title="Reset default values for all settings." id="reset_config">
+      <span class="icon-reset" aria-hidden="true"></span> Reset all default values </button>
+  </div>
+</div>
+</div>
+</div>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/config.js"></script>
+</body>
+</html>

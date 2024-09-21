@@ -1,0 +1,97 @@
+body {
+  width: 240px;
+  height: 320px;
+}
+
+div#wrapper {
+  margin-top: 10px;
+}
+
+p#title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+#activate-form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#activate-input-key {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  background-color: #eee;
+  border-style: none;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#activate-input-key:focus {
+  outline: none;
+}
+
+#activate-input-submit {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #ffc107;
+  border-radius: 4px;
+  border-style: none;
+  height: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+div#upgrade {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p#subtitle {
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#upgrade-btn-monthly, #upgrade-btn-yearly {
+  background-color: #2dcc70;
+  width: 100%;
+  border-radius: 4px;
+  border-style: none;
+  height: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#trial-btn {
+  background-color: #F44336;
+  width: 100%;
+  border-radius: 4px;
+  border-style: none;
+  height: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1b99e6;
+    color: #ffffff;
+}
+.container_payment {
+    display: flex;
+    flex-direction: column;
+}
+.error_payment {
+    display: none;
+	font-size: 20px;
+	color:red;
+}
